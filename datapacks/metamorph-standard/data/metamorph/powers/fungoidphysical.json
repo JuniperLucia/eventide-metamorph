@@ -1,0 +1,14 @@
+{
+    "name": "Fungi Physicality",
+    "description": "Depending on how much you have decomposed, you are able to grow in size and gain speed.",
+    "type": "origins:multiple",
+    "consumption": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 50,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 7
+        }
+    }
+}
