@@ -1,0 +1,10 @@
+{
+    "name": "Human",
+    "description": "A powerless creature in a world of interesting beings. Who would want to be them?",
+    "icon": "minecraft:player_head",
+    "impact": 0,
+    "order": 0,
+    "powers": [
+        "metamorph:short"
+    ]
+}

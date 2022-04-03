@@ -6,5 +6,6 @@
     "missing_description": "woops lol",
     "allow_random": true,
     "origins": [
+        "metamorph:human"
     ]
 }
