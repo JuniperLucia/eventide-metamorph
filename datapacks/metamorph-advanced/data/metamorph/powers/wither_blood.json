@@ -1,0 +1,35 @@
+{
+    "name": "Wither Blood",
+    "description": "When effected with the Wither effect, regenerate instead of decay.",
+    "type": "origins:multiple",
+    "wither_immunity": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        },
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "minecraft:wither"
+        }
+    },
+    "wither_regeneration": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:heal",
+                "amount": 1
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:heart"
+                },
+                "count": 3,
+                "speed": 1.0
+            }]
+        },
+        "interval": 30
+    }
+}

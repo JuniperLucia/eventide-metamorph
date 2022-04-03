@@ -1,0 +1,19 @@
+{
+    "name": "Weakness to Sunlight",
+    "description": "Standing under the sun harms you severely.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 1,
+        "source": {
+            "name": "onFire",
+            "bypasses_armor": true,
+            "unblockable": true,
+            "out_of_world": true
+        }
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    }
+}

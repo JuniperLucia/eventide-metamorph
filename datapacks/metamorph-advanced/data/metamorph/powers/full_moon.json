@@ -1,0 +1,106 @@
+{
+    "name": "Full Moon",
+    "description": "Upon nightfall, your abilities will become demigod-like. This effect is also applied in The End.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "night_sky": {
+        "type": "origins:action_over_time",
+        "interval": 50,
+        "rising_action": {
+            "type": "origins:change_resource",
+            "resource": "metamorph:full_moon_toggle",
+            "change": 1,
+            "operation": "set"
+        },
+        "falling_action": {
+            "type": "origins:change_resource",
+            "resource": "metamorph:full_moon_toggle",
+            "change": 0,
+            "operation": "set"
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [{
+                "type": "origins:and",
+                "conditions": [{
+                    "type": "origins:daytime",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:exposed_to_sky"
+                }]
+            },
+            {
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_end"
+            }]
+        }
+    },
+    "lunar_adrenaline": {
+        "type": "origins:attribute",
+        "modifiers": [{
+            "attribute": "minecraft:generic.max_health",
+            "value": 14,
+            "operation": "addition"
+        },
+        {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.5,
+            "operation": "addition"
+        },
+        {
+            "attribute": "minecraft:generic.attack_damage",
+            "value": 2,
+            "operation": "addition"
+        },
+        {
+            "attribute": "minecraft:generic.attack_knockback",
+            "value": 0.25,
+            "addition": "addition"
+        }],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "metamorph:full_moon_toggle",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "moonlight_waltz": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [{
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": "<=",
+                "compare_to": 0.25
+            },
+            {
+                "type": "origins:sneaking",
+                "inverted": true
+            },
+            {
+                "type": "origins:resource",
+                "resource": "metamorph:full_moon_toggle",
+                "comparison": "==",
+                "compare_to": 1
+            }]
+        }
+    },
+    "cheese_moon": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "name": "Increased exhaustion",
+            "operation": "multiply_base",
+            "value": -0.25
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Health Decrease",
+        "attribute": "minecraft:generic.max_health",
+        "value": -10,
+        "operation": "addition"
+    },
+    "hidden": true
+}

@@ -1,0 +1,63 @@
+{
+    "name": "Curse of the Immortal",
+    "description": "Upon your health reaching zero, you will experience a state of invulnerability followed by the expulsion of excess wither blood in the body. Movement during this process is limited.",
+    "type": "origins:multiple",
+    "recharge": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "metamorph:decayed_revival_cooldown",
+            "change": 1
+        },
+        "interval": 100
+    },
+    "prevent_death": {
+        "type": "origins:prevent_death",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [{
+                "type": "origins:apply_effect",
+                "effects": [{
+                    "effect": "minecraft:slowness",
+                    "duration": 140,
+                    "amplifier": 4
+                },
+                {
+                    "effect": "minecraft:resistance",
+                    "duration": 160,
+                    "amplifier": 4
+                }]
+            },
+            {
+                "type": "origins:spawn_effect_cloud",
+                "radius": 3,
+                "radius_on_use": -0.25,
+                "wait_time": 60,
+                "effect": {
+                    "effect": "minecraft:wither",
+                    "duration": 100
+                }
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "metamorph:decayed_revival_cooldown",
+                "amount": -60
+            }]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "metamorph:decayed_revival_cooldown",
+            "comparison": ">=",
+            "compare_to": 60
+        }
+    },
+    "shaking": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "metamorph:decayed_revival_cooldown",
+            "comparison": "<",
+            "compare_to": 60
+        }
+    }
+}

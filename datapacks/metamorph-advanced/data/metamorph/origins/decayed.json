@@ -1,0 +1,14 @@
+{
+    "name": "Decayed",
+    "description": "A member of a long lost civilization. Having cracked what appeared to be the secret to immortality, the leaders of a great nation cursed all who lived in it.",
+    "icon": "minecraft:wither_skeleton_skull",
+    "impact": 3,
+    "order": 11,
+    "powers": [
+        "metamorph:decayed_aesthetic",
+        "metamorph:decayed_health",
+        "metamorph:wither_blood",
+        "metamorph:decayed_revival_cooldown",
+        "metamorph:decayed_revival"
+    ]
+}

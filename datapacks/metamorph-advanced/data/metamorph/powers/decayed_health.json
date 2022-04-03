@@ -1,0 +1,11 @@
+{
+    "name": "Decayed Body",
+    "description": "Your body is weaker than a normal human, due to the nature of your curse.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Health Decrease",
+        "attribute": "minecraft:generic.max_health",
+        "value": -10,
+        "operation": "addition"
+    }
+}

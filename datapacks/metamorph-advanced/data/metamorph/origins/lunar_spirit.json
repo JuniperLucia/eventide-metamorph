@@ -1,0 +1,14 @@
+{
+    "name": "Lunar Spirit",
+    "description": "A supernatural creature that gains its power from the moon.",
+    "icon": "minecraft:soul_lantern",
+    "impact": 3,
+    "order": 3,
+    "powers": [
+        "metamorph:lunar_health",
+        "metamorph:lunar_cloak",
+        "metamorph:full_moon",
+        "metamorph:solar_damage",
+        "metamorph:spiritual_body"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:model_color",
+    "red": 0.25,
+    "green": 0.35,
+    "blue": 0.45,
+    "alpha": 0.45,
+    "hidden": true
+}
