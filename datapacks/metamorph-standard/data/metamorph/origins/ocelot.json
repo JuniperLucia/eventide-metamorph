@@ -1,0 +1,10 @@
+{
+    "name": "Ocelot",
+    "description": "A furry animal that thrives in dense jungles.",
+    "icon": "minecraft:cod",
+    "impact": 2,
+    "order": 1,
+    "powers": [
+        "metamorph:short"
+    ]
+}

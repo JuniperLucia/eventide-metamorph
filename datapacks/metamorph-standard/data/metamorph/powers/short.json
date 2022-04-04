@@ -1,6 +1,6 @@
 {
-    "name": "\"Average Height\"",
-    "description": "You're average height (for the time).",
+    "name": "Small Build",
+    "description": "You're smaller than the average person.",
     "type": "extraorigins:modify_scale",
-    "scale": 0.8
+    "scale": 0.65
 }

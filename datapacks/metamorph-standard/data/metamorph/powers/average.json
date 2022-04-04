@@ -1,0 +1,6 @@
+{
+    "name": "\"Average Height\"",
+    "description": "You're average height (for the time).",
+    "type": "extraorigins:modify_scale",
+    "scale": 0.8
+}
