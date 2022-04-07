@@ -10,11 +10,6 @@ These are items that require a lot of work and that may be essential to the core
 - A third option may be discovered. Ideas include poly-origins, perk lotteries, and origin-specific upgrade paths that do not change the origin, but merely improve it.
 - Just had an idea as I was typing the last thing. What if you could change how the origin acts with certain items (like Deepwoken mantras and the augmentation table)?
 
-* Create a public repository that has a shrunk-down version of the main datapack.
-- Market it as a "Lite" version of the server that other people can play with and use.
-- Keep the appeal to our server, as the origins will be more plentiful as well as have other custom features.
-- Possibly add a "contributions" thing where people who want to add origins can add them through pull requests. By sending files through GitHub, it keeps us safe while also simplifying the process.
-
 * Make a 10k/15k by 10k/15k custom map for Metamorph.
 - This limits the spread players can have and can be used to eliminate unwanted vanilla features (e.g. nether highways)
 - Also allows for custom ores to be created and added.
